@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./lib/css/reset.css">
+    <link rel="stylesheet" href="./lib/css/common.css">
+    <link rel="stylesheet" href="./lib/css/fonts.css">
+    <link rel="stylesheet" href="./lib/css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./lib/js/jquery-1.12.4.min.js"></script>
+    <script src="./lib/js/swiper-bundle.min.js"></script>
+    <script src="./lib/js/aos.js"></script>
+
+    <script src="./lib/js/lenis.min.js"></script>
+
+    <script src="./js/custom.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="test">
+        <a href="" class="arrow_btn">
+            My Name
+        </a>
+    </div>
+
+
+    <style>
+        .arrow_btn {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            gap: 24px;
+            height: 40px;
+        }
+
+
+        .arrow_btn::after {
+            content: "";
+            width: 80px;
+            height: 1px;
+            background: #333;
+
+            transition: 0.2s;
+        }
+
+        .arrow_btn:hover::after {
+            width: 120px;
+        }
+
+        .arrow_btn::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 8px;
+            height: 1px;
+            background: #333;
+            transform: rotate(45deg);
+            transform-origin: right;
+        }
+    </style>
+
+
+</body>
+
+</html>

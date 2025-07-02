@@ -1,0 +1,164 @@
+/* 메인 컬러 #003a40 */
+
+/* 연한 #246e72 */
+
+.inner {
+    max-width: 1770px;
+    margin: 0 auto;
+}
+
+.in_inner {
+    max-width: 1410px;
+    margin: 0 auto;
+}
+
+em {
+    display: block;
+}
+
+.default {
+    padding: 120px 0;
+}
+
+.default .title h2 {
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+.default .title p {
+    margin-top: 16px;
+    font-size: 17px;
+    font-size: 400;
+
+    color: #555;
+
+    letter-spacing: -0.02em;
+}
+
+/* 화살표 */
+
+
+.arrow_btn {
+    position: relative;
+    display: inline-flex;
+    margin: 24px 0 40px 0;
+
+    align-self: flex-start;
+    align-items: center;
+    gap: 16px;
+    height: 40px;
+}
+
+.arrow_btn::after {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: #003a40;
+
+    transition: 0.3s;
+}
+
+.arrow_btn:hover::after {
+    width: 80px;
+}
+
+.arrow_btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 8px;
+    height: 1px;
+    background: #003a40;
+    transform: rotate(45deg);
+    transform-origin: right;
+}
+
+/* 상품 화살표 */
+
+.default_btn {
+    position: relative;
+    display: inline-flex;
+    /* margin: 24px 0 32px 0; */
+
+    align-self: flex-start;
+    align-items: center;
+    gap: 16px;
+    height: 40px;
+}
+
+.default_btn::after {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: #fff;
+
+    transition: 0.3s;
+}
+
+.btn_box:hover .default_btn::after {
+    width: 80px;
+}
+
+.default_btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 8px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(45deg);
+    transform-origin: right;
+}
+
+/* 스토어 화살표 */
+
+
+.store_btn {
+    position: relative;
+    display: inline-flex;
+    /* margin: 24px 0 32px 0; */
+
+    align-self: flex-start;
+    align-items: center;
+    gap: 16px;
+    height: 40px;
+}
+
+.store_btn::after {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: #333;
+
+    transition: 0.3s;
+}
+
+.store_btn:hover::after {
+    width: 60px;
+    height: 1px;
+    background: #fff;
+
+    transition: 0.3s;
+}
+
+.store_btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 8px;
+    height: 1px;
+    background: #333;
+    transform: rotate(45deg);
+    transform-origin: right;
+
+    transition: 0.3s;
+}
+
+.btn_box:hover .store_btn::before {
+    background: #fff;
+
+}
